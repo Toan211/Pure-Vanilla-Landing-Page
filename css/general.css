@@ -1,0 +1,301 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	/* font-size: 10px; */
+	
+}
+
+html{
+	font-size: 10px;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: Belanosima;
+	src: url(../font/Belanosima/Belanosima-Regular.ttf);
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../font/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+h1{
+	font-size: 2rem;
+}
+
+p, span{
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+									supported by Chrome, Edge, Opera and Firefox */
+}
+
+a, button{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+hr{
+	border-color: rgb(0, 0, 0);
+}
+
+li {
+	list-style: none;
+}
+
+p{
+	font-size: 1.5rem;
+}
+
+table,tr,th,td{
+	font-size: 1.5rem;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+th{
+	font-size: 1.8rem;
+}
+
+/* ---------font------- */
+
+.roboto-light {
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 2rem;
+}
+
+.roboto-light-italic {
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 2rem;
+	font-style: italic;
+	color: rgb(142 142 142);
+	
+}
+
+
+.roboto-regular {
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 2rem;
+	color: rgb(142 142 142);
+}
+
+.roboto-bold {
+	font-family: Roboto;
+	font-weight: bold;
+}
+
+.montserrat-regular {
+	font-family: Montserrat;
+	text-transform: uppercase;
+	font-size: 1.9rem; /*14pt*/
+	color: black;
+}
+
+.montserrat-bold {
+	font-family: Montserrat;
+	font-weight: bold;
+	
+}
+
+.belanosima{
+	font-family: Belanosima;
+}
+
+/* ----------------- */
+
+.center{
+	margin: 0 auto;
+}
+
+.relative{
+	position: relative;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.width-90-p{
+	width: 90%;
+}
+
+.m-top-5{
+    margin-top: 5px;
+}
+
+.m-bot-5{
+    margin-bottom: 5px;
+}
+
+.m-top-10{
+    margin-top: 10px;
+}
+
+.m-bot-10{
+    margin-bottom: 10px;
+}
+
+.m-top-15 {
+	margin-top: 15px;
+}
+
+.m-bot-15 {
+	margin-bottom: 15px;
+}
+
+.m-top-20{
+	margin-top: 20px;
+}
+
+.m-bot-20 {
+	margin-bottom: 20px;
+}
+
+.m-left-20{
+	margin-left: 20px;
+}
+
+.m-top-30{
+    margin-top: 30px;
+}
+
+.m-bot-30{
+    margin-bottom: 30px;
+}
+
+.m-top-40{
+    margin-top: 40px;
+}
+
+.m-bot-40{
+    margin-bottom: 40px;
+}
+
+.m-top-60 {
+	margin-top: 60px;
+}
+
+.m-bot-60 {
+	margin-bottom: 60px;
+}
+
+.m-bot-70 {
+	margin-bottom: 70px;
+}
+
+.m-bot-90 {
+	margin-bottom: 90px;
+}
+
+.p-0{
+	padding: 0;
+}
+
+
+.p-top-60 {
+	padding-top: 60px;
+}
+
+/* --------------lỉne------------ */
+
+.line-full{
+	border: 1px solid white;
+}
+
+.line-w-60 {
+	width: 70px;
+    /* border: 1px solid white; */
+    display: inline-block;
+    height: 3px;
+    background-color: #004923;
+	display: inline-block;
+}
+
+.line-w-280 {
+	width: 280px;
+	border: 3px solid white;
+	display: inline-block;
+	z-index: 0;
+}
+
+.line-w-280-hover {
+	width: 280px;
+	border: 3px solid rgb(255, 0, 0);
+	display: inline-block;
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	z-index: 1;
+}
+
+/* ---------12 column--------- */
+
+.container-fluid{
+	width: 100%;
+	/* padding: 0 12px; */
+}
+.container{
+	/* width: 1000px; */
+	width: 80%;
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-direction-c{
+	flex-direction: column;
+}
+
+.justify-content-between{
+	justify-content: space-between;
+}
+.justify-content-center{
+	justify-content: center;
+}
+.justify-content-end{
+	justify-content: flex-end;
+}
+.w-100{
+	width: 100%;
+}
+.al-items-center{
+	align-items: center;
+}
+
+/* .center */
+.text-center{
+	text-align: center;
+	text-align: -webkit-center;
+}
+
+/* full 12 col */
+[class*="col-"]{
+	/* padding: 12px; */
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
