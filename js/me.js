@@ -74,6 +74,13 @@ $(document).ready(function () {
 				$(this).addClass("active-subnav");
 			}
 		});
+
+		$(".nav-m-sidebar > ul > li > a").each(function (event) {
+			if (windowTop >= $($(this).attr("href")).offset().top - 100) {
+				$(".nav-m-sidebar > ul > li > a.active-mobile-nav").removeClass("active-mobile-nav");
+				$(this).addClass("active-mobile-nav");
+			}
+		});
 	});
 
 	//------- smooth scroll --------//
@@ -128,6 +135,7 @@ $(document).ready(function () {
 		let navButton = $(".nav-button");
 		let navMenu = $(".nav-nav > ul");
 		let navMenuA = $(".nav-nav > ul > li > a");
+		let navMobile = $(".nav-mobile");
 		let lastScrollY = window.scrollY;
 		$(window).scroll(function (e) {
 			if (lastScrollY < window.scrollY) {
@@ -137,6 +145,7 @@ $(document).ready(function () {
 				navButton.addClass("nav--hidden");
 				navMenu.css("height", "70px");
 				navMenuA.css("height", "70px");
+				navMobile.css("height", "70px");
 			} else {
 				navbar.removeClass("nav--hidden");
 				navLogo.removeClass("nav--hidden");
@@ -144,6 +153,7 @@ $(document).ready(function () {
 				navButton.removeClass("nav--hidden");
 				navMenu.css("height", "90px");
 				navMenuA.css("height", "90px");
+				navMobile.css("height", "90px");
 			}
 
 			lastScrollY = window.scrollY;

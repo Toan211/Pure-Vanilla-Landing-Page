@@ -205,6 +205,116 @@
 	background-color: #02331a;
 }
 
+/*------ nav-mobile responsive ---------*/
+
+
+.nav-mobile {
+	height: 90px;
+	background: rgb(0, 73, 35);
+	background: linear-gradient(
+		0deg,
+		rgba(0, 73, 35, 1) 0%,
+		rgba(0, 73, 35, 0.845617470621061) 50%,
+		rgba(0, 73, 35, 1) 100%
+	);
+	transition: 0.3s all;
+	display: none;
+	align-items: center;
+	text-align: center;
+}
+
+.nav-mobile-bar {
+	width: 10%;
+}
+
+
+/* nav sidebar responsive */
+
+.nav-mbar-btn{
+  font-size: 3rem;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-m-overlay{
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.2);
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  
+}
+
+.nav-m-sidebar{
+    position: fixed;
+	
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width:320px;
+    background-color:rgb(0, 73, 35);
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-msidebar-list{
+	margin-top: 90px;
+}
+
+.nav-msidebar-list li:hover{
+	background-color: #003017;;
+}
+
+.nav-msidebar-list li a{
+	display:block;
+  padding: 2.5rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s;
+}
+
+
+.nav-msidebar-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width:40px;
+  height: 40px;
+  padding: 10px 15px 0 0;
+  cursor: pointer;
+  font-size: 3rem;
+  color: white;
+}
+
+
+.nav_m_input:checked ~ .nav-m-sidebar{
+  transform: translateX(0);
+}
+.nav_m_input:checked ~.nav-m-overlay{
+	visibility: visible;
+  transform: translateX(320px);
+}
+
+.active-mobile-nav{
+	background-color: #003017;
+}
+
+
+@media only screen and (max-width: 992px) {
+	.nav-mobile{
+		display: flex;
+	  }
+	  .navbar{
+		display:none;
+	  }
+}
+
+
 /* button */
 
 .nav-button {
@@ -285,6 +395,7 @@
 .about-us-image-contain > ul {
 	display: flex;
 	justify-content: space-between;
+	gap: 15px;
 }
 
 .about-us-image-contain > ul li {
@@ -611,6 +722,16 @@
 	width: 70%;
 }
 
+.quote-content-inner p{
+	font-size: 2.5rem;
+}
+
+.quote-content-inner span {
+	font-size: 3rem;
+	margin-left: 10px;
+	color: #004923;
+}
+
 /* --------our team------- */
 
 .our-team {
@@ -627,6 +748,7 @@
 .our-team-image-contain > ul {
 	display: flex;
 	justify-content: space-between;
+	gap: 10px;
 }
 
 .our-team-image-contain > ul li {
@@ -948,7 +1070,7 @@
 
 .contact-container {
 	margin: 0 auto;
-	width: 50%;
+	width: 60%;
 	height: 400px;
 	border-radius: 10px;
 }
@@ -1229,3 +1351,4 @@ td {
 .footer-note p span {
 	color: #ffffff;
 }
+

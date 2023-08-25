@@ -1,0 +1,76 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1300px) {
+	/* fact */
+	.fact-content > li > :nth-child(2) {
+		font-size: 1.8rem;
+	}
+
+	.fact-content > li > :nth-child(1) {
+		font-size: 6rem;
+	}
+
+	/* quote */
+	.quote-content-inner p {
+		font-size: 2.2rem;
+	}
+
+	/* contact */
+	.contact-container {
+		width: 80%;
+	}
+
+	.footer-content-contact-info a {
+		font-size: 1.5rem;
+	}
+
+	.footer-content-blog ul li .montserrat-regular {
+		font-size: 1.5rem;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+	
+}
+
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+	.fact-content > li > :nth-child(2) {
+		font-size: 1.6rem;
+	}
+
+	.fact-content > li > :nth-child(1) {
+		font-size: 5rem;
+	}
+
+	/* quote */
+	.quote-content > i {
+		padding: 30px;
+		font-size: 5rem;
+	}
+
+	.quote-content-inner p {
+		font-size: 2rem;
+	}
+
+	.quote-content-inner span {
+		font-size: 2.5rem;
+		margin-left: 10px;
+		color: #004923;
+	}
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+
+
