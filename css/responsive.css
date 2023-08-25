@@ -1,16 +1,15 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
-
+@media only screen and (min-width: 1200px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and down) */
 @media only screen and (max-width: 1300px) {
+
 	/* fact */
-	.fact-content > li > :nth-child(2) {
+	.fact-content>li> :nth-child(2) {
 		font-size: 1.8rem;
 	}
 
-	.fact-content > li > :nth-child(1) {
+	.fact-content>li> :nth-child(1) {
 		font-size: 6rem;
 	}
 
@@ -35,28 +34,78 @@
 
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px) {
-	
-}
-
-
-/* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
-	.fact-content > li > :nth-child(2) {
-		font-size: 1.6rem;
+	.fact-content>li> :nth-child(1) {
+		font-size: 4.5rem;
 	}
 
-	.fact-content > li > :nth-child(1) {
-		font-size: 5rem;
+	.quote-content {
+		gap: 10px;
 	}
 
-	/* quote */
-	.quote-content > i {
-		padding: 30px;
+	.quote-content>i {
+		padding: 20px;
 		font-size: 5rem;
 	}
 
 	.quote-content-inner p {
 		font-size: 2rem;
+	}
+
+	.our-team {
+		height: 850px;
+	}
+
+	.footer-content {
+		margin-bottom: 25px;
+	}
+
+	.footer-content-legent-email {
+		display: none;
+	}
+
+	.footer-content-blog ul li .montserrat-regular {
+		font-size: 1.3rem;
+	}
+
+	.footer-content-contact ul li {
+		gap: 10px;
+	}
+
+	.footer-content-contact-info a {
+		font-size: 1.3rem;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+	.fact-content>li> :nth-child(2) {
+		font-size: 1.6rem;
+	}
+
+	.fact-content>li> :nth-child(1) {
+		font-size: 4rem;
+	}
+
+	.about-us-content>.container>p {
+		display: none;
+	}
+
+	#service {
+		height: 550px;
+	}
+
+	#banner-slide .item .product-content span {
+		display: none;
+	}
+
+	/* quote */
+	.quote-content>i {
+		padding: 30px;
+		font-size: 4rem;
+	}
+
+	.quote-content-inner p {
+		font-size: 1.8rem;
 	}
 
 	.quote-content-inner span {
@@ -65,12 +114,128 @@
 		color: #004923;
 	}
 
-}
+	.manufactor {
+		height: 380px;
+	}
 
+	.our-story-contain-context .roboto-regular {
+		display: none;
+	}
+
+	.our-story {
+		height: 540px;
+	}
+
+	.contact-container {
+		width: 100%;
+	}
+
+	.footer-content-legent>.roboto-regular {
+		display: none;
+	}
+
+	.footer-content-logo img {
+		width: 50%;
+		margin-bottom: 40px;
+	}
+
+	.footer-content-blog {
+		display: none;
+	}
+
+	.footer-content-contact {
+		width: 50%;
+	}
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.about-us-content>h1 {
+		font-size: 3rem;
+	}
+
+	.about-us-content>p {
+		font-size: 1.8rem;
+	}
+
+	.about-us {
+		height: 1400px;
+	}
+
+	.about-us-image-contain {
+		margin-top: 50px;
+	}
+
+	.about-us-image-contain>ul {
+		flex-direction: column;
+	}
+
+	.fact-content {
+		width: 100%;
+	}
+
+	.fact-content>li> :nth-child(1) {
+		font-size: 2.5rem;
+	}
+
+	.fact-content>li> :nth-child(2) {
+		font-size: 1.3rem;
+	}
+
+	#service {
+		height: 800px;
+	}
+
+	.about-us-content>.container h1 {
+		font-size: 3rem;
+	}
+	.about-us-content>.container>p {
+		display: block;
+	}
+
+	.quote-content-inner {
+		/* width: 70%; */
+		display: none;
+	}
+
+	.our-team {
+		height: 2450px;
+	}
+
+	.our-team-image-contain {
+		margin-top: 50px;
+	}
+
+	.our-team-image-contain>ul {
+		flex-direction: column;
+	}
+
+	.join_us-img img {
+		width: 100%;
+	}
+
+	.manufactor {
+		height: 470px;
+	}
+
+
+	#section-testimonials{
+		height: 500px;
+	}
+	.our-story-contain>ul li>.our-story-contain-image>.our-story-contain-image-day {
+		width: 45px;
+		height: 50px;
+		line-height: 25px;
+		padding-top: 5px;
+	}
+
+	.our-story-contain > ul li > .our-story-contain-image > .our-story-contain-image-day :first-child {
+		
+		font-size: 2rem;
+	}
+
+	.our-story-contain > ul li > .our-story-contain-image > .our-story-contain-image-day:last-child {
+		font-size: 1rem;
+	}
+
 }
-
-
-
